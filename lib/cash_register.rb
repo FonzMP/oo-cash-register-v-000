@@ -27,7 +27,8 @@ class CashRegister
   end
 
   def items
-
+    @@CART.each do |item|
+    end
   end
 
 end
