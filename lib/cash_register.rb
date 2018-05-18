@@ -20,7 +20,7 @@ class CashRegister
       @@total_cart << price
       count += 1
     end
-    
+
     @@cart
   end
 
@@ -43,7 +43,7 @@ class CashRegister
 
   def void_last_transaction
     @@total_cart
-    # @total = @total.to_f - @@total_cart[-1].to_f
+    @total = @total - @@total_cart[-1]
   end
 
 end
