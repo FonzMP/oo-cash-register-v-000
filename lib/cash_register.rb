@@ -45,7 +45,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total = @total - @@total_cart[-1]
+    @total = @total.to_i - @@total_cart[-1]
   end
 
 end
