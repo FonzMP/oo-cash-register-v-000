@@ -29,7 +29,7 @@ class CashRegister
   def items
     holder = []
     @@CART.collect do |item|
-      puts item
+      holder << item
     end
   end
 
