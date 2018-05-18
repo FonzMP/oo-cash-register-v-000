@@ -17,6 +17,7 @@ class CashRegister
 
     while count < quantity
       @@cart << title
+      @@total_cart << price
       count += 1
     end
 
