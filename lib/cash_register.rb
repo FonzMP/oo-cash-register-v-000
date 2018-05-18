@@ -28,7 +28,7 @@ class CashRegister
 
   def items
     holder = []
-    @@CART.collect do |item|
+    @@CART.each do |item|
       holder << item
     end
     holder
