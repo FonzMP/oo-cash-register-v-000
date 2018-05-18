@@ -28,6 +28,7 @@ class CashRegister
 
   def items
     @@CART.collect do |item|
+      puts item
     end
   end
 
