@@ -28,8 +28,8 @@ class CashRegister
 
   def items
     holder = []
-    add_item
     @@CART.collect do |item|
+      binding.pry
       holder << item
     end
     holder
