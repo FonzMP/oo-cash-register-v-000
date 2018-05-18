@@ -20,11 +20,7 @@ class CashRegister
       @@total_cart << price
       count += 1
     end
-
-    while count < quantity
-      @@total_cart << price
-      count += 1
-    end
+    
     @@cart
   end
 
