@@ -1,9 +1,6 @@
 describe 'CashRegister' do
   let(:cash_register) { CashRegister.new }
   let(:cash_register_with_discount) { CashRegister.new(20) }
-  before(:each)
-    @@CART = {}
-  end
 
   describe '::new' do
     it 'sets an instance variable @total on initialization to zero' do
