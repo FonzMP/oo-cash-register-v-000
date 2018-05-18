@@ -13,7 +13,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @title = title
     @total += price * quantity
-    
+
     @@CART << title
   end
 
@@ -28,6 +28,7 @@ class CashRegister
 
   def items
     holder = []
+    add_item
     @@CART.collect do |item|
       holder << item
     end
