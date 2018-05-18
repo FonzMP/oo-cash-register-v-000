@@ -16,10 +16,10 @@ class CashRegister
     count = 0
 
     while count < quantity
-      @@CART << title
+      @@cart << title
       count += 1
     end
-    @@CART
+    @@cart
   end
 
   def apply_discount
@@ -33,7 +33,7 @@ class CashRegister
 
   def items
     holder = []
-    @@CART.each do |item|
+    @@cart.each do |item|
       holder << item
     end
     holder
