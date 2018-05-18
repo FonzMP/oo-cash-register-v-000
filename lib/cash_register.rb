@@ -24,7 +24,6 @@ class CashRegister
       @@total_cart << price
       count += 1
     end
-    puts @@total_cart
     @@cart
   end
 
