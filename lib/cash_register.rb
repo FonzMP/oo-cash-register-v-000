@@ -13,7 +13,8 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @title = title
     @total += price * quantity
-    puts title  * 3
+
+    while count < quantity
     @@CART << title
   end
 
