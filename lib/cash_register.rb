@@ -17,7 +17,7 @@ class CashRegister
     if @discount == 0
       @total
     else
-      @total = @total.to_f * (@discount.to_f / 100.to_f)
+      @total = @total.to_f - (@total * (@discount.to_f / 100.to_f))
     end
   end
 
