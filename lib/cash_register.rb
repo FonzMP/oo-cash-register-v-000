@@ -31,6 +31,7 @@ class CashRegister
     @@CART.collect do |item|
       holder << item
     end
+    holder
   end
 
 end
