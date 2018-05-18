@@ -5,6 +5,7 @@ class CashRegister
 
   def initialize(discount = 0)
     @@cart = []
+    @@total_cart = []
     @total = 0
     @discount = discount
   end
@@ -20,6 +21,7 @@ class CashRegister
     end
 
     while count < quantity
+      
     @@cart
   end
 
