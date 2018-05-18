@@ -18,6 +18,8 @@ class CashRegister
       @@cart << title
       count += 1
     end
+
+    while count < quantity
     @@cart
   end
 
