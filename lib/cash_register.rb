@@ -19,6 +19,7 @@ class CashRegister
       @@CART << title
       count += 1
     end
+    @@CART
   end
 
   def apply_discount
